@@ -1,0 +1,189 @@
+﻿@model InitialTask3.Models.Salary
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Salary</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @TempData["name"]
+         <table>
+             <tr>
+                   <th> </th>
+                    <th>ActualAnnualSalary</th><br />
+                    <th>LastYearOtherIncome</th><br />
+                    <th>TotalIncome</th><br />
+             </tr>
+             <tr>
+                 <td>Chief Executive Officer</td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+             </tr>
+                <tr>
+                    <td>General Manager</td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                     
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rooms Director</td>
+                    <td>
+                        <div class="form-group">
+                   
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Executive Administrative Assistant</td>
+                    <td>
+                        <div class="form-group">
+                         
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                           
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Managing director</td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Area Genereal Manager</td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="ActualAnnualSalary" class="form-control" />
+                            <span asp-validation-for="ActualAnnualSalary" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="LastYearOtherIncome" class="form-control" />
+                            <span asp-validation-for="LastYearOtherIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+
+                            <input asp-for="TotalIncome" class="form-control" />
+                            <span asp-validation-for="TotalIncome" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+
+         </table>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
